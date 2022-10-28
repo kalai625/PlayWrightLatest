@@ -12,3 +12,5 @@
 
 3. To get Playwright HTML report  >>>  npx playwright show-report
 
+4.  npx playwright test --trace on
+ 

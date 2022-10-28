@@ -1,9 +1,9 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-test('Navigate Annular Home page', async ({ page }) => {
+test('Navigate plex login page', async ({ page }) => {
 
-  await page.goto('https://www.annulartechnologies.com/');
+  await page.goto('https://test.cloud.plex.com/');
   const ref =await page.title();  
   console.log(ref);
 });
