@@ -61,7 +61,7 @@ const config = {
     },
 
     {
-      name: 'webkit',
+      name: 'webkit', 
       use: {
         ...devices['Desktop Safari'],
       },
