@@ -1,25 +1,16 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-test('homepage has Playwright in title and get started link linking to the intro page', async ({ page }) => {
+test('Navigate Annular Home page', async ({ page }) => {
 
   await page.goto('https://www.annulartechnologies.com/');
   const ref =await page.title();  
   console.log(ref);
-  
-  // await page.goto('https://playwright.dev/');
-  // // Expect a title "to contain" a substring.
-  // await expect(page).toHaveTitle(/Playwright/);
+});
 
-  // // create a locator
-  // const getStarted = page.getByText('Get Started');
+test('Navigate Linkined Home page1', async ({ page }) => {
 
-  // // Expect an attribute "to be strictly equal" to the value.
-  // await expect(getStarted).toHaveAttribute('href', '/docs/intro');
-
-  // // Click the get started link.
-  // await getStarted.click();
-  
-  // // Expects the URL to contain intro.
-  // await expect(page).toHaveURL(/.*intro/);
+  await page.goto('https://www.linkedin.com/');
+  const ref1 =await page.title();  
+  console.log(ref1);
 });
